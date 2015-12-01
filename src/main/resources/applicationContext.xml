@@ -6,7 +6,7 @@
                            http://www.springframework.org/schema/tx      http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
 
 	<!-- 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->
-	<context:component-scan base-package="me.kafeitu.activiti">
+	<context:component-scan base-package="gov.zcy.activiti">
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
 
@@ -32,7 +32,7 @@
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
 			</props>
 		</property>
-		<property name="packagesToScan" value="me.kafeitu.activiti.entity" />
+		<property name="packagesToScan" value="gov.zcy.activiti.entity" />
 	</bean>
 
 	<!-- 事务管理 -->
@@ -53,14 +53,14 @@
 		<!-- 自定义表单字段类型 -->
 		<property name="customFormTypes">
 			<list>
-				<bean class="me.kafeitu.activiti.form.JavascriptFormType" />
+				<bean class="gov.zcy.activiti.form.JavascriptFormType" />
 			</list>
 		</property>
 
 		<!-- 自定义表单引擎 -->
 		<property name="customFormEngines">
 			<list>
-				<bean class="me.kafeitu.activiti.form.MyFormEngine" />
+				<bean class="gov.zcy.activiti.form.MyFormEngine" />
 			</list>
 		</property>
 
@@ -85,7 +85,7 @@
 
 		<property name="eventListeners">
 			<list>
-				<bean class="me.kafeitu.activiti.listener.TaskEventLinster" />
+				<bean class="gov.zcy.activiti.listener.TaskEventLinster" />
 			</list>
 		</property>
 	</bean>

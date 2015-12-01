@@ -1,4 +1,4 @@
-package me.kafeitu.activiti.web.chapter5.deployment;
+package gov.zcy.activiti.web.chapter5.deployment;
 
 import org.activiti.engine.RepositoryService;
 import org.activiti.engine.repository.DeploymentBuilder;
