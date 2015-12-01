@@ -1,6 +1,6 @@
 package me.kafeitu.activiti.web.identity;
 
-import me.kafeitu.activiti.chapter6.util.UserUtil;
+import me.kafeitu.activiti.util.UserUtil;
 //import me.kafeitu.activiti.web.base.AbstractController;
 import org.activiti.engine.IdentityService;
 import org.activiti.engine.identity.Group;

@@ -1,9 +1,9 @@
 package me.kafeitu.activiti.web.chapter7;
 
-import me.kafeitu.activiti.chapter6.util.UserUtil;
-import me.kafeitu.activiti.chapter7.entity.Leave;
-import me.kafeitu.activiti.chapter7.service.LeaveManager;
-import me.kafeitu.activiti.chapter7.service.LeaveWorkflowService;
+import me.kafeitu.activiti.util.UserUtil;
+import me.kafeitu.activiti.entity.Leave;
+import me.kafeitu.activiti.service.LeaveManager;
+import me.kafeitu.activiti.service.LeaveWorkflowService;
 import org.activiti.engine.ActivitiException;
 import org.activiti.engine.RuntimeService;
 import org.activiti.engine.TaskService;

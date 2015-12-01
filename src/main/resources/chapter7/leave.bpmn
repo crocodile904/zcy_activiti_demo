@@ -5,14 +5,14 @@
     <startEvent id="startevent1" name="Start" activiti:initiator="applyUserId"></startEvent>
     <userTask id="deptLeaderVerify" name="部门领导审批" activiti:candidateGroups="deptLeader">
 		<extensionElements>
-           <activiti:taskListener event="assignment" class="me.kafeitu.activiti.chapter7.listener.TaskAssigneeListener"></activiti:taskListener>
+           <activiti:taskListener event="assignment" class="me.kafeitu.activiti.listener.TaskAssigneeListener"></activiti:taskListener>
         </extensionElements>
 	</userTask>
     <exclusiveGateway id="exclusivegateway5" name="Exclusive Gateway"></exclusiveGateway>
     <userTask id="modifyApply" name="调整申请" activiti:assignee="${applyUserId}"></userTask>
     <userTask id="hrVerify" name="人事审批" activiti:candidateGroups="hr">
 		<extensionElements>
-		   <activiti:taskListener event="create" class="me.kafeitu.activiti.chapter7.listener.CreateTaskListener">
+		   <activiti:taskListener event="create" class="me.kafeitu.activiti.listener.CreateTaskListener">
 			  <activiti:field name="task">
 				<activiti:expression>${task}</activiti:expression>
 			  </activiti:field>

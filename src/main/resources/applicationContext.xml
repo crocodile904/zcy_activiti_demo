@@ -32,7 +32,7 @@
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
 			</props>
 		</property>
-		<property name="packagesToScan" value="me.kafeitu.activiti.chapter7.entity" />
+		<property name="packagesToScan" value="me.kafeitu.activiti.entity" />
 	</bean>
 
 	<!-- 事务管理 -->
@@ -53,14 +53,14 @@
 		<!-- 自定义表单字段类型 -->
 		<property name="customFormTypes">
 			<list>
-				<bean class="me.kafeitu.activiti.chapter6.form.JavascriptFormType" />
+				<bean class="me.kafeitu.activiti.form.JavascriptFormType" />
 			</list>
 		</property>
 
 		<!-- 自定义表单引擎 -->
 		<property name="customFormEngines">
 			<list>
-				<bean class="me.kafeitu.activiti.chapter6.form.MyFormEngine" />
+				<bean class="me.kafeitu.activiti.form.MyFormEngine" />
 			</list>
 		</property>
 
@@ -85,7 +85,7 @@
 
 		<property name="eventListeners">
 			<list>
-				<bean class="me.kafeitu.activiti.chapter7.listener.TaskEventLinster" />
+				<bean class="me.kafeitu.activiti.listener.TaskEventLinster" />
 			</list>
 		</property>
 	</bean>

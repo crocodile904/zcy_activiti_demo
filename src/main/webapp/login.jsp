@@ -38,9 +38,8 @@
 		</form>
 
         <div class="row">
-            <h5>登录失败时请用终端进入${pageContext.request.contextPath}项目目录执行：<br/><code>mvn antrun:run -Pinit-db</code></h5>
             <hr />
-            <h4 class="text-info">用户与角色列表（密码：000000）</h4>
+            <h4 class="text-info">用户与角色列表（密码：不用输）</h4>
             <table class="table table-hover">
                 <thead>
                 <tr>
@@ -90,7 +89,7 @@
                 <tr class="info">
                     <td>7</td>
                     <td>andy</td>
-                    <td>普通职员</td>
+                    <td>部门经理</td>
                     <td>业务部</td>
                 </tr>
                 <tr class="info">
@@ -98,24 +97,6 @@
                     <td>amy</td>
                     <td>普通职员</td>
                     <td>业务部</td>
-                </tr>
-                <tr class="danger">
-                    <td>9</td>
-                    <td>tony</td>
-                    <td>财务人员</td>
-                    <td>财务部</td>
-                </tr>
-                <tr class="danger">
-                    <td>10</td>
-                    <td>lily</td>
-                    <td>出纳员</td>
-                    <td>财务部</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>thomas</td>
-                    <td>后勤人员</td>
-                    <td>后勤部</td>
                 </tr>
                 </tbody>
             </table>
